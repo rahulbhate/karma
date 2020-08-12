@@ -1,0 +1,118 @@
+/*--------------------------- Color variations ----------------------*/
+/*--------------------------- Fonts ----------------------*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:500,700|Roboto:400,500");
+/* Section Gaps css
+============================================================================================ */
+body {
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #777777;
+  background: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  color: #fcfcfc;
+  font-weight: 500;
+  line-height: 1.2 !important;
+}
+
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* banner area css
+============================================================================================ */
+/* Feature Product Area css
+============================================================================================ */
+/* Latest Blog Area css
+============================================================================================ */
+/*============ End Blog Single Styles  =============*/
+/*============== contact_area css ================*/
+/* End Contact Success and error Area css
+============================================================================================ */
+.footer-area {
+  background-color: #222222;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.footer-inner .d-flex {
+  display: flex;
+}
+
+.footer-inner .flex-wrap {
+  flex-wrap: wrap;
+}
+
+.footer-inner h6 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .footer-inner h6 {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 1068px) {
+  .footer-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 670px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+}
