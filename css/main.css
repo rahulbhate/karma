@@ -74,45 +74,62 @@ button:focus {
 /* End Contact Success and error Area css
 ============================================================================================ */
 .footer-area {
-  background-color: #222222;
-  text-align: left;
-  margin: 0 auto;
-}
-
-.footer-inner {
   display: grid;
+  background-color: #222222;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
+  margin: 0 auto;
+  padding: 60px;
 }
 
-.footer-inner .d-flex {
-  display: flex;
+.footer-area .footer-area__nesting {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
-.footer-inner .flex-wrap {
-  flex-wrap: wrap;
+.footer-area .footer-area__nesting p {
+  padding: 0px;
+  margin: 0px;
 }
 
-.footer-inner h6 {
+.footer-area .footer-area__ i, .footer-area a {
+  color: white;
+  padding: 10px;
+}
+
+.footer-area .footer-area__ i:hover, .footer-area a:hover {
+  color: #777777;
+}
+
+.footer-area .footer-area__nesting-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-area .footer-area__h6 {
   color: #fff;
   font-size: 18px;
   font-weight: 600;
 }
 
+.footer-area .footer-area__h6:hover {
+  color: #777777;
+}
+
 @media (max-width: 767px) {
-  .footer-inner h6 {
+  .footer-area .footer-area__h6 {
     margin-bottom: 15px;
   }
 }
 
 @media (max-width: 1068px) {
-  .footer-inner {
+  .footer-area {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 670px) {
-  .footer-inner {
+  .footer-area {
     grid-template-columns: 1fr;
   }
 }
