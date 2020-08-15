@@ -75,7 +75,7 @@ button:focus {
 
 .product-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: auto auto auto auto;
   grid-gap: 10px;
   text-align: center;
 }
@@ -111,7 +111,7 @@ button:focus {
 
 .features-area {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: auto auto auto auto;
   grid-gap: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -183,12 +183,23 @@ button:focus {
   }
 }
 
+.item1 {
+  display: grid;
+  text-align: center;
+  grid-column: 1 / span 4;
+}
+
+.item1 h1 {
+  color: black;
+  font-size: 36px;
+}
+
 .single-related-product {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .single-related-product .nested-inner {

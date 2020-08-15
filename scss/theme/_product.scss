@@ -7,7 +7,7 @@
 }
 .product-cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: auto auto auto auto;;
     grid-gap: 10px;
     text-align: center;
     h3{
@@ -17,7 +17,7 @@
         color: $text-color;
     }
     @media(max-width: 1068px) {
-        grid-template-columns: repeat(2, 1fr);
+         grid-template-columns: repeat(2, 1fr);
     }
     @media(max-width: 500px) {
             grid-template-columns: 1fr;
@@ -34,7 +34,7 @@
 
   .features-area {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: auto auto auto auto;
     grid-gap: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -91,13 +91,21 @@
             grid-template-columns: repeat(2, 1fr);
     }
   }
-
+.item1 {
+    display: grid;
+    text-align: center;
+    grid-column: 1 / span 4;
+    h1{
+        color: black;
+        font-size: 36px;
+    }
+}
   .single-related-product {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     .nested-inner {
         display: grid;
         grid-template-columns: repeat(4,1fr);
