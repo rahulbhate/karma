@@ -19,7 +19,7 @@
             color: white;
             padding: 10px;
             &:hover{
-                color: $text-color;
+                color: $link-color;
             }
         }
         #{&}__nesting-row {

@@ -80,11 +80,11 @@ button:focus {
   text-align: center;
 }
 
-.product-cards h1 {
+.product-cards h3 {
   color: #777777;
 }
 
-.product-cards h6 {
+.product-cards h4 {
   color: #777777;
 }
 
@@ -101,11 +101,50 @@ button:focus {
 }
 
 .product-cards img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .product-cards img:hover {
   opacity: 0.7;
+}
+
+.features-area {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  padding: 50px;
+}
+
+.features-area h4 {
+  font-weight: bold;
+  color: black;
+}
+
+@media (max-width: 1068px) {
+  .features-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .features-area div {
+    border-right: none !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .features-area {
+    grid-template-columns: 1fr;
+  }
+  .features-area div {
+    border-right: none !important;
+  }
+}
+
+.features-area div {
+  border-right: 1px solid #eeeeee;
 }
 
 /* Latest Blog Area css
@@ -139,7 +178,7 @@ button:focus {
 }
 
 .footer-area .footer-area__ i:hover, .footer-area a:hover {
-  color: #777777;
+  color: #ff9001;
 }
 
 .footer-area .footer-area__nesting-row {
