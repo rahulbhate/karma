@@ -172,11 +172,43 @@ button:focus {
   .brand-area {
     grid-template-columns: repeat(2, 1fr);
   }
+  .brand-area #item5 {
+    grid-column: 1 / 3;
+  }
 }
 
 @media (max-width: 500px) {
   .brand-area {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.single-related-product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.single-related-product .nested-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.single-related-product .nested-inner p:nth-child(4) {
+  text-decoration: line-through;
+}
+
+@media (max-width: 1068px) {
+  .single-related-product {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .single-related-product {
+    grid-template-columns: 1fr;
   }
 }
 
