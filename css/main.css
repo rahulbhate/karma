@@ -117,7 +117,7 @@ button:focus {
   text-align: center;
   margin-bottom: 50px;
   margin-top: 50px;
-  padding: 40px;
+  padding: 20px;
 }
 
 .features-area h4 {
@@ -149,6 +149,35 @@ button:focus {
 
 .features-area div {
   border-right: 1px solid #eeeeee;
+}
+
+.brand-area {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.brand-area img {
+  opacity: 0.2;
+}
+
+.brand-area img:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 1068px) {
+  .brand-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .brand-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Latest Blog Area css

@@ -42,7 +42,7 @@
     text-align: center;
     margin-bottom: 50px;
     margin-top: 50px;
-    padding: 40px;
+    padding: 20px;
     h4{
         font-weight: bold;
         color: black;
@@ -65,5 +65,26 @@
     }
     div {
         border-right: 1px solid #eeeeee;
+    }
+  }
+  .brand-area {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    img{
+        opacity: 0.2;
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+   
+    @media(max-width: 1068px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media(max-width: 500px) {
+            grid-template-columns: repeat(2, 1fr);
     }
   }
