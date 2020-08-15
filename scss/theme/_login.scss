@@ -1,0 +1,79 @@
+.login_box_area{ 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    h1{
+        color: black;
+        font-size: 24px;
+    }
+    .login-form {
+        text-align: center;
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+    .create-account{
+        margin-top: 10px;
+        margin-bottom: 15px;
+        text-align: left;
+        display: inline-block;
+        width: 400px;
+    }
+    input[type='checkbox'] {
+        width: 20px;
+        vertical-align: middle;
+      }
+      input[type='checkbox'] + label {
+        display: inline-block;
+      }
+    
+    .login_form {
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+    }
+    .img-fluid{
+        width: 100%;
+        height: auto;
+        -webkit-filter: brightness(20%);
+        filter:brightness(45%);
+    }
+    input{
+    // height: 54px;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #cccccc;
+    border-radius: 0px;
+    outline: none;
+    box-shadow: none;
+    line-height: 5em;
+    }
+   
+    button {
+        width: 100%;
+        text-transform: uppercase;
+        border: none;
+        padding: 12px 12px;
+        font-weight: 500;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 3px;
+        background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+        &:hover{
+            background: linear-gradient(90deg,#ff6c00 0%, #ffba00 100% );
+        }
+    }
+    @media(max-width: 1068px) {
+        grid-template-columns:  1fr;
+    }
+    @media(max-width: 768px) {
+        grid-template-columns: 1fr;
+        margin: 0px;
+        padding: 0px;
+        box-shadow: none;
+}
+
+  }

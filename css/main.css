@@ -226,6 +226,97 @@ button:focus {
 /* Latest Blog Area css
 ============================================================================================ */
 /*============ End Blog Single Styles  =============*/
+.login_box_area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.login_box_area h1 {
+  color: black;
+  font-size: 24px;
+}
+
+.login_box_area .login-form {
+  text-align: center;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr;
+}
+
+.login_box_area .create-account {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: left;
+  display: inline-block;
+  width: 400px;
+}
+
+.login_box_area input[type='checkbox'] {
+  width: 20px;
+  vertical-align: middle;
+}
+
+.login_box_area input[type='checkbox'] + label {
+  display: inline-block;
+}
+
+.login_box_area .login_form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
+
+.login_box_area .img-fluid {
+  width: 100%;
+  height: auto;
+  filter: brightness(45%);
+}
+
+.login_box_area input {
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #cccccc;
+  border-radius: 0px;
+  outline: none;
+  box-shadow: none;
+  line-height: 5em;
+}
+
+.login_box_area button {
+  width: 100%;
+  text-transform: uppercase;
+  border: none;
+  padding: 12px 12px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+}
+
+.login_box_area button:hover {
+  background: linear-gradient(90deg, #ff6c00 0%, #ffba00 100%);
+}
+
+@media (max-width: 1068px) {
+  .login_box_area {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .login_box_area {
+    grid-template-columns: 1fr;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: none;
+  }
+}
+
 /*============== contact_area css ================*/
 /* End Contact Success and error Area css
 ============================================================================================ */
