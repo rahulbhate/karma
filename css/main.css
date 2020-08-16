@@ -63,6 +63,36 @@ button:focus {
   overflow: hidden;
 }
 
+.main-nav {
+  background: #fff;
+  margin: 0px auto 0;
+  max-width: 1920px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0;
+  height: 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav ul {
+  display: flex;
+}
+
+.main-nav ul li {
+  padding: 0 10px;
+}
+
+.main-nav ul li a {
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.main-nav ul li a:hover {
+  color: #ffba00;
+}
+
 /* banner area css
 ============================================================================================ */
 /* Feature Product Area css

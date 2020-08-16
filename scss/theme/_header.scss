@@ -1,1 +1,27 @@
 //header_area css
+.main-nav {
+    background: #fff;
+    margin: 0px auto 0;
+    max-width: 1920px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    height: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+     ul{
+        display: flex;
+    }
+    ul li {
+          padding:0 10px;
+         
+    }
+    ul li a {
+        color: black;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    ul li a:hover {
+        color: #ffba00;
+    }
+}
