@@ -27,6 +27,10 @@
     }
     @media(max-width: 1068px) {
         grid-template-columns: repeat(2, 1fr);
+        .product-nested-row-span{
+            display: none;
+            grid-row: auto;
+        }
     }
     @media(max-width: 768px) {
         grid-template-columns: 1fr;
