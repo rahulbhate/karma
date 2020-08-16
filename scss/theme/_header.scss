@@ -13,13 +13,16 @@
         display: flex;
     }
     ul li {
-          padding:0 10px;
+          padding:0 20px;
          
     }
     ul li a {
         color: black;
         font-weight: bold;
         font-size: 12px;
+    }
+    ul li i {
+        color: $text-color;
     }
     ul li a:hover {
         color: #ffba00;

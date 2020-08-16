@@ -80,13 +80,17 @@ button:focus {
 }
 
 .main-nav ul li {
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .main-nav ul li a {
   color: black;
   font-weight: bold;
   font-size: 12px;
+}
+
+.main-nav ul li i {
+  color: #777777;
 }
 
 .main-nav ul li a:hover {
