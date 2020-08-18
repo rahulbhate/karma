@@ -27,10 +27,10 @@
         <a href="index.html"><img src="./img/logo.png" alt="Karma" class="logo" /></a>
         <ul class="right-menu">
             <li><a href="index.html">HOME</a></li>
-            <li><a href="#">SHOP</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">PAGES</a></li>
-            <li><a href="#">CONTATCT</a></li>
+            <li><a href="#shop">SHOP</a></li>
+            <li><a href="#deals">DEALS</a></li>
+            <li><a href="#login">LOG IN</a></li>
+            <li><a href="#contact">CONTATCT</a></li>
             <li><a href="#"> <i class="fas fa-search"></i></a></li>
             <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
         </ul>
@@ -39,20 +39,28 @@
         </div>
     </nav>
     <!-- Showcase -->
-    <header class="showcase">
-        <h1>Nike New Collection !</h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sit distinctio cupiditate unde ullam?
-            Provident odit velit exercitationem optio aspernatur, consequuntur laudantium adipisci vitae modi
-            delectus,
-            quae dolorem, cumque placeat!
-        </p>
-        <a href="#" class="btn">
-            <i class="fas fa-plus"></i>
-        </a>
+    <header id="showcase">
+        <div class="bg-banner"></div>
+        <div class="box-1">
+            <div>
+                <h1>Nike New Collection !</h1>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sit distinctio cupiditate unde
+                    ullam?
+                    Provident odit velit exercitationem optio aspernatur, consequuntur laudantium adipisci vitae modi
+                    delectus,
+                    quae dolorem, cumque placeat!</p>
+            </div>
+            <div>
+                <a href="#" class="btn">
+                    <i class="fas fa-plus"></i>
+                </a>
+            </div>
+        </div>
     </header>
     <div class="container">
-        <section class="login_box_area">
+        <section class="login_box_area" id="login">
             <div>
                 <img class="img-fluid" src="img/login.jpg" alt="" />
             </div>
@@ -65,8 +73,8 @@
                     <input type="password" placeholder="Password">
                 </p>
                 <!-- <p>
-                        <label><input type="checkbox" name="selector" />Keep me logged in</label>
-                    </p> -->
+                    <label><input type="checkbox" name="selector" />Remember</label>
+                </p> -->
                 <p>
                     <button>LOG IN</button>
                 </p>
@@ -205,7 +213,7 @@
                 <img class="img-fluid d-block mx-auto" src="img/brand/5.png" alt="">
             </div>
         </section>
-        <section class="product-cards">
+        <section class="product-cards" id="shop">
             <div class="product">
                 <img src="img/product/p1.jpg" alt="">
                 <h3>addidas New Hammer sole
@@ -263,7 +271,7 @@
                 <h4>$210.00</h4>
             </div>
         </section>
-        <section class="item1">
+        <section class="item1" id="deals">
             <h1>Deals of the Week</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
@@ -357,7 +365,7 @@
     </section>
 
     </div>
-    <footer class="footer-area">
+    <footer class="footer-area" id="contact">
         <div>
             <h6 class="footer-area__h6">About Us</h6>
             <p>

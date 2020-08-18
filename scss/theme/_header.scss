@@ -1,38 +1,48 @@
 //header_area css
 
 /* Showcase */
-.showcase {
-    width: 100%;
-    height: calc(100vh - 80px);
-    background: url('../../img/banner/banner-bg.jpg') no-repeat center center/cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-
-  }
+#showcase {
+    min-height: 480px;
+    // color: black;
   
-   .showcase p {
+}
+.bg-banner {
+    position: absolute;
+    background: url('../../img/banner/banner-bg.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 480px;
+    z-index: -1;
+    // clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 0% 100%);
+}
+
+  
+   #showcase p {
     margin-bottom: 10px;
-    color: $text-color;
-    font-size: 18px;
-    max-width: 400px;
+    color: $title-color;
+    font-size: 16px;
+    // width: 200px;
+    max-width: 500px;
   }
-  .showcase h1 {
+  .box-1 {
+    display: grid;
+    justify-content: end;
+     align-items: center;
+    //  align-content: end;
+    //  align-self: end;
+    grid-template-rows: repeat(3, 2fr);
+    grid-gap: 5px;
+  }
+ 
+  #showcase h1 {
     font-size: 28px;
     color: black;
   }
-  .showcase .btn {
-    margin-top: 20px;
-    height: 50px;
-    width: 50px;
-    line-height: 52px;
-    text-align: center;
-    border-radius: 50%;
-    box-shadow: 0 10px 20px rgba(255, 108, 0, 0.2);
-    background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-    color: white;
+  #showcase .btn {
+     padding: 20px 20px;
+     border-radius: 50%;
+     box-shadow: 0 10px 20px rgba(255, 108, 0, 0.2);
+     background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+     color: white;
   }
 
 .menu-btn {
